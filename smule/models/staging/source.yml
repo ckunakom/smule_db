@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: smule_data
+    schema: ds_matcha
+    tables:
+      - name: favorite
