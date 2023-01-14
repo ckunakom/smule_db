@@ -1,15 +1,17 @@
-This is the sql code for inserting the data into tables.
+`raw_db.sql` is the sql code for inserting the data into tables.
 
-Selecting attributes for the table
-Lots of the data attributes are not very usable and are excluded. For example, the attributes are null at all times, or if they are a string of number that do not hold any meaning or do not make any sense.
+**Selecting attributes for the table**
+
+Lots of the data attributes are not very usable and are excluded. For example, the attributes are _null_ at all times, or if they are a string of number that do not hold any meaning or do not make any sense.
 
 Some of the data attributes  are almost a duplicate of one another. Those are excluded as well.
 
-Some of the data attributes could have potentially stored the data, but given how flimsy the data was being extracted (no authentication needed or whatsoever), it makes sense why it has null as opposed to some data. 
+Some of the data attributes could have potentially stored the data, but given how flimsy the data was being extracted (no authentication needed or whatsoever), it makes sense why it has _null_ as opposed to some data. 
 
-For example: `private` might be an attribute that indicates whether the user has set the performance to private. Thankfully, that attribute is always a null in all the records. Otherwise, one would question if any of their supposed-to-be private performace is really private.
+For example: `private` might be an attribute that indicates whether the user has set the performance to private. Thankfully, that attribute is always a _null_ in all the records. Otherwise, one would question if any of their supposed-to-be private performace is really private.
 
-Here's an exmaple of a record:
+Here's an exmaple of a record from [json page](https://www.smule.com/s/profile/performance/username/):
+```
     {
         "rec_id": null,
         "poi": null,
@@ -33,7 +35,8 @@ Here's an exmaple of a record:
         "song_length": null,
         "perf_status": "n",
         "artist_twitter": null,
-        "media_url": "e:choco4cupcakes324nutella89yummycocoa+hojicha932latte84so12good/real23taro2boba9only+MacaronPistachio92oh9is0that04corecttly7spelled+End0fFaking",
+        "media_url": "e:cupcak3s4nutella89yummycocoa+hojicha932latte84so12good/
+        real23taro2boba9only+MacaronPistachio92oh9is0that04corecttly7spelled+End0fFaking",
         "video_media_url": null,
         "video_media_mp4_url": null,
         "visualizer_media_url": null,
@@ -102,3 +105,4 @@ Here's an exmaple of a record:
         "lyrics": null,
         "segments": null
     }
+```
