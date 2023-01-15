@@ -7,7 +7,7 @@ rename as (
         source.arr_key song_key,
         source.title,
         source.artist,
-        sourc.cover_url
+        source.cover_url
     from source
 )
 

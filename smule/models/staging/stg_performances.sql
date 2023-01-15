@@ -29,6 +29,7 @@ rename as (
         source_stats.total_loves,
         source_stats.total_comments,
         source_stats.total_gifts
+    from source
     inner join source_stats on source.key = source_detail.key
     inner join source_users on source.key = source_users.key
 )
