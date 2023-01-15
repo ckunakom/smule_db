@@ -5,3 +5,8 @@ sources:
     schema: ds_matcha
     tables:
       - name: favorite
+      - name: songs
+      - name: users
+      - name: performances
+      - name: performance_stats
+      - name: performers
