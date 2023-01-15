@@ -3,10 +3,12 @@ with source as (
 ),
 
 rename as (
-    source.arr_key song_key,
-    source.title,
-    source.artist,
-    sourc.cover_url
+    select 
+        source.arr_key song_key,
+        source.title,
+        source.artist,
+        sourc.cover_url
+    from source
 )
 
 select * from rename

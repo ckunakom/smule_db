@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('smule_data','users')}}
+    select * from {{ source('smule_data','users') }}
 ),
 
 rename as (
@@ -7,6 +7,7 @@ rename as (
         account_id,
         handle account_name,
         is_vip
+    from source
 )
 
 select * from rename
